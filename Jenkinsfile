@@ -17,7 +17,7 @@ pipeline {
 			steps {
 				script {
 		
-	        sh 'nohup node ./bin/www &'  
+	        sh 'node ./bin/www'  
 		}
 			}
 		}
