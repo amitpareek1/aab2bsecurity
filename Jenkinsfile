@@ -16,8 +16,8 @@ pipeline {
 		stage ('deploy') {
 			steps {
 				script {
-		sh 'cd bin'
-	        sh 'nohup node www &'  
+		
+	        sh 'nohup node ./bin/www &'  
 		}
 			}
 		}
