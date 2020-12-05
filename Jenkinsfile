@@ -1,6 +1,9 @@
 pipeline {
-	agent "jenkinremotedir"
+	agent { label 'jenkinremotedir'}
 	stages {
+		stage ('checkout') {
+			checkout scm
+		}
 		stage ('build') {
 			sh 'npm install'
 		}
